@@ -11,4 +11,11 @@ services:
     environment:
       - NODE_ENV=development
       - PORT=3000
+      - MONGO_USER=root
+      - MONGO_PASSWORD=admin
     command: npm run dev
+  mongo:
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+     
