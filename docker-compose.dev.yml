@@ -13,6 +13,8 @@ services:
       - PORT=3000
       - MONGO_USER=root
       - MONGO_PASSWORD=admin
+      - SESSION_SECRET=secret
+      
     command: npm run dev
   mongo:
     environment:
