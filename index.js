@@ -81,7 +81,7 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
+app.get("/api/v1", (req, res) => {
   res.send("<h2>Hi there!!</h2>");
 });
 
